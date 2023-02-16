@@ -1,0 +1,724 @@
+# This file was written with GPI v1.1.5 using Network v3. Do not edit this line.
+{
+ "DATETIME": "Tue Feb  7 11:15:48 2023",
+ "GPI_VERSION": "1.1.5",
+ "HEADER": "This is a GPI Network File",
+ "NETWORK_VERSION": "3",
+ "PLATFORM": {
+  "HOSTNAME": "crai",
+  "NUM_CPUS": 16,
+  "OS": "Linux",
+  "PLATFORM": "Wonder about that",
+  "PYTHON": "CPython",
+  "PYTHON_VERSION": "3.7.12",
+  "TOTAL_PHYMEM": 1000000000,
+  "TOTAL_PHYMEM_STR": "Who knows GB"
+ },
+ "TOTAL_PMEM": "168",
+ "WALLTIME": "0.00015974044799804688",
+ "layouts": [],
+ "nodes": {
+  "macroNodes": [],
+  "nodes": [
+   {
+    "avgwalltime": "0.0032984018325805664",
+    "id": 139994009516144,
+    "key": "gpi_core.generators.Bool",
+    "name": "Bool",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 139994009516144,
+         "portID": 139994009559120,
+         "portName": "bool",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 139994009870896,
+         "portID": 139994009515984,
+         "portName": "Read",
+         "portNum": 6
+        }
+       }
+      ],
+      "id": 139994009559120,
+      "obligation": 200,
+      "portnum": 0,
+      "porttitle": "bool",
+      "porttype": 65540,
+      "widgetTitle": "bool"
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 139994009559280,
+         "portID": 139994009575088,
+         "portName": "Write Now",
+         "portNum": 1
+        },
+        "src": {
+         "nodeID": 139994009516144,
+         "portID": 139994009553488,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 139994009553488,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     93.75,
+     43.5
+    ],
+    "stdwalltime": "0.0029717683792114258",
+    "walltime": "0.0003266334533691406",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 139994009552688,
+        "inport": true,
+        "outport": false,
+        "quietval": null,
+        "toggle": false,
+        "val": false,
+        "visible": true
+       },
+       "name": "bool",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.25929296016693115",
+    "id": 139994009870896,
+    "key": "philips.fileIO.ReadPhilips",
+    "name": "ReadPhilips",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 139994009870896,
+         "portID": 139994009515824,
+         "portName": "Read",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 139994010200816,
+         "portID": 139994009815632,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 139994009515824,
+      "obligation": 200,
+      "portnum": 0,
+      "porttitle": "Read",
+      "porttype": 65540,
+      "widgetTitle": "Read"
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 139994009559280,
+         "portID": 139994009573008,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 139994009870896,
+         "portID": 139994010016656,
+         "portName": "data",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 139994010016656,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "data",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 139994010016976,
+      "obligation": null,
+      "portnum": 1,
+      "porttitle": "noise",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 139994010016816,
+      "obligation": null,
+      "portnum": 2,
+      "porttitle": "phc",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 139994010017296,
+      "obligation": null,
+      "portnum": 3,
+      "porttitle": "rr_rtop",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 139994010017136,
+      "obligation": null,
+      "portnum": 4,
+      "porttitle": "spparams",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [],
+      "id": 139994010017456,
+      "obligation": null,
+      "portnum": 5,
+      "porttitle": "header",
+      "porttype": 65541,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 139994009516144,
+         "portID": 139994009559120,
+         "portName": "bool",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 139994009870896,
+         "portID": 139994009515984,
+         "portName": "Read",
+         "portNum": 6
+        }
+       }
+      ],
+      "id": 139994009515984,
+      "obligation": null,
+      "portnum": 6,
+      "porttitle": "Read",
+      "porttype": 65541,
+      "widgetTitle": "Read"
+     }
+    ],
+    "pos": [
+     23.75,
+     -21.5
+    ],
+    "stdwalltime": "0.0017603635787963867",
+    "walltime": "0.25753259658813477",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 139994009873936,
+        "inport": false,
+        "openExternalLinks": false,
+        "outport": false,
+        "quietval": null,
+        "val": "Ignore this",
+        "visible": true,
+        "wordwrap": false
+       },
+       "name": "I/O Info:",
+       "type": "<class 'gpi.widgets.TextBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "directory": "/home/jon/Documents/raw_philips/scan",
+        "id": 139994009940208,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": "/some/path/to/kspace/kspace.raw",
+        "visible": true
+       },
+       "name": "File Browser",
+       "type": "<class 'gpi.widgets.OpenFileBrowser'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 139994009940368,
+        "inport": true,
+        "outport": true,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Read",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "OFF",
+        "collapsed": false,
+        "id": 139994009941488,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "ky chop",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "OFF",
+        "collapsed": false,
+        "id": 139994009942928,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "kz chop",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "OFF",
+        "collapsed": false,
+        "id": 139994009943248,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": false
+       },
+       "name": "PROPELLER",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "ON",
+        "collapsed": false,
+        "id": 139994009943088,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": true,
+        "visible": true
+       },
+       "name": "Apply Corrections",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 139994009952976,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": false
+       },
+       "name": "Re-scale Type",
+       "type": "<class 'gpi.widgets.ExclusivePushButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 139994009953776,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 1,
+        "visible": true
+       },
+       "name": "Execution Type",
+       "type": "<class 'gpi.widgets.ExclusiveRadioButtons'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "OFF",
+        "collapsed": false,
+        "id": 139994009954576,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Read Param Only",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "OFF",
+        "collapsed": false,
+        "id": 139994009955376,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Data Downsampling",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 139994009956176,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": 1,
+        "visible": false
+       },
+       "name": "Downsampling Mode",
+       "type": "<class 'gpi.widgets.ExclusiveRadioButtons'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 139994009973936,
+        "immediate": false,
+        "inport": false,
+        "label": "",
+        "max": 256,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "singlestep": 2,
+        "val": 64,
+        "visible": false,
+        "wrapping": false
+       },
+       "name": "Padding Width",
+       "type": "<class 'gpi.widgets.SpinBox'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 139994009974896,
+        "inport": false,
+        "max": 16,
+        "min": 1,
+        "outport": false,
+        "quietval": null,
+        "val": 1,
+        "visible": false
+       },
+       "name": "Average Window Width",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 139994009975696,
+        "inport": false,
+        "max": 100,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": 100,
+        "visible": false
+       },
+       "name": "Hanning Filter Width (%)",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 139994010010000,
+        "inport": false,
+        "max": 100,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": 100,
+        "visible": false
+       },
+       "name": "Hanning Filter Window (%)",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": true,
+        "id": 139994010010800,
+        "inport": false,
+        "max": 64,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": 16,
+        "visible": false
+       },
+       "name": "Retained Data Length",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "OFF",
+        "collapsed": false,
+        "id": 139994010012880,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Select Coil",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 139994010013360,
+        "inport": false,
+        "max": 0,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": false
+       },
+       "name": "Coil",
+       "type": "<class 'gpi.widgets.Slider'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "OFF",
+        "collapsed": false,
+        "id": 139994010014576,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Select Slice",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "collapsed": false,
+        "id": 139994010015376,
+        "inport": false,
+        "max": 0,
+        "min": 0,
+        "outport": false,
+        "quietval": null,
+        "val": 0,
+        "visible": false
+       },
+       "name": "Slice",
+       "type": "<class 'gpi.widgets.Slider'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.1461317539215088",
+    "id": 139994009559280,
+    "key": "gpi_core.fileIO.WriteNPY",
+    "name": "WriteNPY",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 139994009559280,
+         "portID": 139994009573008,
+         "portName": "in",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 139994009870896,
+         "portID": 139994010016656,
+         "portName": "data",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 139994009573008,
+      "obligation": 100,
+      "portnum": 0,
+      "porttitle": "in",
+      "porttype": 65540,
+      "widgetTitle": null
+     },
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 139994009559280,
+         "portID": 139994009575088,
+         "portName": "Write Now",
+         "portNum": 1
+        },
+        "src": {
+         "nodeID": 139994009516144,
+         "portID": 139994009553488,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 139994009575088,
+      "obligation": 200,
+      "portnum": 1,
+      "porttitle": "Write Now",
+      "porttype": 65540,
+      "widgetTitle": "Write Now"
+     }
+    ],
+    "pos": [
+     -54.25,
+     84.5
+    ],
+    "stdwalltime": "0.0",
+    "walltime": "0.1461317539215088",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "collapsed": false,
+        "directory": "/home/jon/Documents/raw_philips/test",
+        "id": 139994009559600,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "val": "/where/to/save/ksapce/kspace.npy",
+        "visible": true
+       },
+       "name": "File Browser",
+       "type": "<class 'gpi.widgets.SaveFileBrowser'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "Write on New Filename",
+        "collapsed": false,
+        "id": 139994009571408,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": true,
+        "val": false,
+        "visible": true
+       },
+       "name": "Write Mode",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      },
+      {
+       "kwargs": {
+        "button_title": "Write Right Now",
+        "collapsed": false,
+        "id": 139994009572208,
+        "inport": true,
+        "outport": false,
+        "quietval": null,
+        "toggle": false,
+        "val": false,
+        "visible": true
+       },
+       "name": "Write Now",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   },
+   {
+    "avgwalltime": "0.07433044910430908",
+    "id": 139994010200816,
+    "key": "gpi_core.generators.Bool",
+    "name": "Bool",
+    "ports": [
+     {
+      "connections": [
+       {
+        "dest": {
+         "nodeID": 139994009870896,
+         "portID": 139994009515824,
+         "portName": "Read",
+         "portNum": 0
+        },
+        "src": {
+         "nodeID": 139994010200816,
+         "portID": 139994009815632,
+         "portName": "out",
+         "portNum": 0
+        }
+       }
+      ],
+      "id": 139994009815632,
+      "obligation": null,
+      "portnum": 0,
+      "porttitle": "out",
+      "porttype": 65541,
+      "widgetTitle": null
+     }
+    ],
+    "pos": [
+     -63.25,
+     -106.5
+    ],
+    "stdwalltime": "0.000658869743347168",
+    "walltime": "0.07498931884765625",
+    "widget_settings": {
+     "label": "",
+     "parms": [
+      {
+       "kwargs": {
+        "button_title": "",
+        "collapsed": false,
+        "id": 139994009814832,
+        "inport": false,
+        "outport": false,
+        "quietval": null,
+        "toggle": false,
+        "val": true,
+        "visible": true
+       },
+       "name": "bool",
+       "type": "<class 'gpi.widgets.PushButton'>"
+      }
+     ]
+    }
+   }
+  ]
+ }
+}
